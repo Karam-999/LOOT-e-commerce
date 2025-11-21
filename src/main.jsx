@@ -6,9 +6,13 @@ import SellerDashboard from './SellerDashboard.jsx'
 
 // Simple routing based on URL path
 const path = window.location.pathname;
+const basePath = import.meta.env.BASE_URL;
+
+// Check if path ends with /seller (accounting for base path)
+const isSeller = path.endsWith('/seller') || path.endsWith('/seller/');
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    {path === '/seller' ? <SellerDashboard /> : <App />}
+    {isSeller ? <SellerDashboard /> : <App />}
   </StrictMode>,
 )
