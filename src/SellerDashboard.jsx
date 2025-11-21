@@ -209,7 +209,7 @@ const SellerDashboard = () => {
             </div>
             <div className="flex items-center gap-3">
               <a 
-                href="/"
+                href="#/"
                 className="bg-yellow-400 text-black px-6 py-2 rounded-lg font-bold hover:bg-yellow-500 transition-colors"
               >
                 View Store

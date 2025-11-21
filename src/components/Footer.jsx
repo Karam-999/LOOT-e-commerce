@@ -8,7 +8,7 @@ const Footer = ({ onShowTerms, onShowPrivacy }) => {
           <button onClick={onShowTerms} className="hover:text-white">Terms</button>
           <button onClick={onShowPrivacy} className="hover:text-white">Privacy</button>
           <a 
-            href="/seller"
+            href="#/seller"
             className="hover:text-white"
           >
             Seller Portal

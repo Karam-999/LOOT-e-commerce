@@ -4,12 +4,9 @@ import './index.css'
 import App from './App.jsx'
 import SellerDashboard from './SellerDashboard.jsx'
 
-// Simple routing based on URL path
-const path = window.location.pathname;
-const basePath = import.meta.env.BASE_URL;
-
-// Check if path ends with /seller (accounting for base path)
-const isSeller = path.endsWith('/seller') || path.endsWith('/seller/');
+// Use hash-based routing for GitHub Pages compatibility
+const hash = window.location.hash;
+const isSeller = hash === '#/seller';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
